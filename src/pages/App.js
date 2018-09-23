@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import SearchBar from '../components/SearchBar'
 class App extends Component {
   constructor() {
     super()
@@ -16,7 +16,8 @@ class App extends Component {
 
   render() {
     return (
-      <h1>loading: {JSON.stringify(this.state.loading)}</h1>
+      <SearchBar></SearchBar>
+      // <h1>loading: {JSON.stringify(this.state.loading)}</h1>
     )
   }
 }
