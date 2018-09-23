@@ -14,11 +14,18 @@ class App extends Component {
   //   }, 1000)
   // }
 
+  handleTypeSearch = event => {
+    this.setState({
+      search: event.target.value
+    })
+    console.log(this.state.search)
+  }
+
   render() {
     return (
       <SearchBar
-        name = "brenda"
-        id = "123"
+        search = {this.state.search} 
+        onChangeSearch = {this.handleTypeSearch}
       ></SearchBar>
       // <h1>loading: {JSON.stringify(this.state.loading)}</h1>
     )
