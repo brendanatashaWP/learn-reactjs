@@ -16,7 +16,10 @@ class App extends Component {
 
   render() {
     return (
-      <SearchBar></SearchBar>
+      <SearchBar
+        name = "brenda"
+        id = "123"
+      ></SearchBar>
       // <h1>loading: {JSON.stringify(this.state.loading)}</h1>
     )
   }
